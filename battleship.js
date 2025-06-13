@@ -1,6 +1,7 @@
-var location1 = 3;	//первая позиция корабля
-var location2 = 4;	//вторая позиция корабля
-var location3 = 5;	//третья позиция корабля
+var randomLoc = Math.floor(Math.random() * 5);	//генерируем случайное, целое число, от 0 до 4.
+var location1 = randomLoc;	//первая позиция корабля
+var location2 = location1 + 1;	//вторая позиция корабля
+var location3 = location2 + 1;	//третья позиция корабля
 
 var guess;			//координата текущего выстрела
 var hits = 0;		//количество попаданий
